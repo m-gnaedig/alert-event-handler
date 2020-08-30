@@ -1,6 +1,6 @@
 [
     {
-      "id": "oc-commands",
+      "id": "commands",
       "execute-command": "./hook1.sh",
       "command-working-directory": "/var/scripts/"
     }
