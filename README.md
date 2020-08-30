@@ -19,6 +19,11 @@ http://\<Service-To-Your-Alert-Event-Handler>:9000/hooks/commands
 
 At the moment there is no Username and Password implemented.
 
+#### ToDo:
+* Create a standard container for dockerhub and make the executable shell script configurable via Kubernetes Configmap.
+* Write several deploy YAML files to deploy the pod, service and configuration.
+* Write Helm Chart to install and manage all at once.
+
 #### News:
 * **28.08.2020:** First idea of this project
 * **29.08.2020:** Add OC OpenShift Client to Dockerfile
