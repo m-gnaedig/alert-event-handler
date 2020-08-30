@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: alert-event-handler
-  namespace: "altemista-monitoring"
 spec:
   selector:
     matchLabels:
@@ -15,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 29041966/alert-event-handler:0.2.26 # Version 0.2.24 Includes OC Client
+        image: 29041966/alert-event-handler:0.2.26 
         ports:
         - containerPort: 9000
