@@ -1,5 +1,5 @@
 Create-DockerContainer
 Concept
-Deploy-Alert-Event-Handler.sh
+Deploy-Alert-Event-Handler-Helm-Chart.sh
 Create_a_public_Helm_chart_repository_with_GitHub_Pages.png
 Create-Helm-Chart.sh

@@ -13,7 +13,7 @@ spec:
         app: alert-event-handler
     spec:
       containers:
-      - name: nginx
-        image: 29041966/alert-event-handler:0.2.26 
+      - name: alert-event-handler
+        image: 29041966/alert-event-handler:0.1.1
         ports:
         - containerPort: 9000
