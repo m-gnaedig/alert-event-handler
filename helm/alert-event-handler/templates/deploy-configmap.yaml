@@ -1,0 +1,14 @@
+kind: ConfigMap
+apiVersion: "v1"
+metadata:
+  name: "alert-event-handler"
+  namespace: "altemista-monitoring"
+data: 
+  hooks.json: |-
+    "id": "delete-pod",
+    "execute-command": "/etc/webhook/delete-pod.sh",
+    "command-working-directory": "/var/webhook"
+
+  delete-pod.sh: |-
+    #!/bin/sh
+    echo "`date`: Here was an event..."
