@@ -10,5 +10,5 @@ entries:
     type: application
     urls:
     - https://m-gnaedig.github.io/alert-event-handler/helm/alert-event-handler-0.1.0.tgz
-    version: 0.1.0
+    version: 0.1.1
 generated: "2020-08-30T21:43:03.546804645+02:00"
