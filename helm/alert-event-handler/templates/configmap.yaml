@@ -4,9 +4,9 @@ metadata:
   name: alert-event-handler
 data:
   hooks.json: |-
-"id": {{ .Values.hook-id }}
-"execute-command": {{ .Values.execute-command }}
-"command-working-directory": {{ .Values.command-working-directory }}
+"id": "{{ .Values.hook-id }}"
+"execute-command": "{{ .Values.execute-command }}"
+"command-working-directory": "{{ .Values.command-working-directory }}"
 
 #data: 
 #  hooks.json: |-
