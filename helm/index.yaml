@@ -3,9 +3,9 @@ entries:
   alert-event-handler:
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2020-09-04T21:52:07.15697269+02:00"
+    created: "2020-09-04T21:54:13.436216112+02:00"
     description: A Helm chart for Kubernetes
-    digest: bc0ace383f9fe7aa88b31e5bebb0d5d4024035ccb678a37a9c14d7e6c7a6385b
+    digest: f130141599849675861e023d3ce291a8ebdc3863bafe720b8299357385c6832e
     name: alert-event-handler
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2020-09-04T21:52:07.156749339+02:00"
+    created: "2020-09-04T21:54:13.435993969+02:00"
     description: A Helm chart for Kubernetes
     digest: 22ca8647052fb82a41b5101636fbc67506ae71b5d624f36438ce0a3dd0841888
     name: alert-event-handler
@@ -21,4 +21,4 @@ entries:
     urls:
     - https://m-gnaedig.github.io/alert-event-handler/helm/alert-event-handler-0.1.1.tgz
     version: 0.1.1
-generated: "2020-09-04T21:52:07.156378816+02:00"
+generated: "2020-09-04T21:54:13.435649071+02:00"
