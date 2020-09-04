@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   alert-event-handler:
   - apiVersion: v2
-    appVersion: 1.16.0
+    appVersion: 0.1.1
     created: "2020-08-30T21:43:03.547542918+02:00"
     description: A Helm chart for Kubernetes
     digest: b62ad022e3eb8ed3df25c85883d705e4889249ff09e5c4236e1845095d3bea8c
