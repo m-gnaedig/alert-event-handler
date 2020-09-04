@@ -1,4 +1,7 @@
 # Default values for alert-event-handler.
 # This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
 
+# Configure ConfigMap content
+hook-id: command
+execute-command: /etc/webhook/command.sh
+command-working-directory: /var/webhook

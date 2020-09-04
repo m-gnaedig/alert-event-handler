@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: alert-event-handler
+data:
+  hooks.json: |-
+  "id": {{ .Values.hook-id }}
+  "execute-command": {{ .Values.execute-command }}
+  "command-working-directory": {{ .Values.command-working-directory }}
+
+#data: 
+#  hooks.json: |-
+#    "id": "delete-pod",
+#    "execute-command": "/etc/webhook/delete-pod.sh",
+#    "command-working-directory": "/var/webhook"
+#
+#  delete-pod.sh: |-
+#    #!/bin/sh
+#    echo "`date`: Here was an event..."
+

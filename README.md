@@ -29,3 +29,4 @@ At the moment there is no Username and Password implemented.
 * **28.08.2020:** First idea of this project
 * **29.08.2020:** Add OC OpenShift Client to Dockerfile
 * **30.08.2020:** Add kubectl to Dockerfile
+* **04.09.2020:** Add OC OpenShift Client Version 3.11.276 to Dockerfile

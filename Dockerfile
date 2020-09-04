@@ -20,7 +20,7 @@ COPY        hook1.sh /var/scripts/hook1.sh
 RUN         chmod +x /var/scripts/hook1.sh
 
 # Install OC OpenShift Client
-ENV         OC_OPENSHIFT_CLIENT_VERSION 3.9.102
+ENV         OC_OPENSHIFT_CLIENT_VERSION 3.11.276
 RUN         apk  --no-cache add ca-certificates wget
 RUN         wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub
 RUN         wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.28-r0/glibc-2.28-r0.apk
