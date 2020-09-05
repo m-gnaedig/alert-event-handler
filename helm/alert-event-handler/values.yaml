@@ -2,6 +2,18 @@
 # This is a YAML-formatted file.
 
 # Configure ConfigMap content
-hookid: command
-executecommand: /etc/webhook/command.sh
-commandworkingdirectory: /var/webhook
+id: "commands"
+executecommand: "/var/scripts/hook1.sh"
+commandworkingdirectory: "/var/scripts/"
+
+# Executed Shell Commands
+command1: oc
+command2: oc version
+command3: Hello World
+command4:
+command5:
+command6:
+command7:
+command8:
+command9:
+command10:
