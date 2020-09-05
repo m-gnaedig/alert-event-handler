@@ -18,15 +18,13 @@ Than you can setup your Event-Handler as a WebHook Alert Receiver in your Promet
 http://\<Service-To-Your-Alert-Event-Handler>:9000/hooks/commands 
 
 At the moment there is no Username and Password implemented.
-
+ 
 #### ToDo:
-* Create a standard container for DockerHub
-* Create example shell script configurable via ConfigMap.
-* Write several deploy YAML files to deploy the pod, service and configuration.
-* Write Helm Chart to install and manage all at once.
-
+* Add a solution for WebHook Authentification
+ 
 #### News:
 * **28.08.2020:** First idea of this project
 * **29.08.2020:** Add OC OpenShift Client to Dockerfile
 * **30.08.2020:** Add kubectl to Dockerfile
 * **04.09.2020:** Add OC OpenShift Client Version 3.11.276 to Dockerfile
+* **05.09.2020:** Create Helm Chart  
