@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: alert-event-handler-sh
+data:
+  hook1.sh: |
+{{ .Values.commands | indent 4 }}

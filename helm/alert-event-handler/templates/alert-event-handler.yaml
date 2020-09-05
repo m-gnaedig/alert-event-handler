@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alert-event-handler
+spec:
+  selector:
+    matchLabels:
+      app: alert-event-handler
+  replicas: 1 
+  template:
+    metadata:
+      labels:
+        app: alert-event-handler
+    spec:
+      containers:
+      - name: alert-event-handler
+        image: 29041966/alert-event-handler:0.1.3
+        ports:
+        - containerPort: 9000
+        volumeMounts:
+          - mountPath: /etc/webhook/
+            name: alert-event-handler-json
+            readOnly: true
+          - mountPath: /var/scripts/
+            name: alert-event-handler-sh
+            readOnly: true
+      volumes:
+        - configMap:
+            name: alert-event-handler-json
+          name: alert-event-handler-json
+        - configMap:
+            name: alert-event-handler-sh
+            defaultMode: 0777
+          name: alert-event-handler-sh

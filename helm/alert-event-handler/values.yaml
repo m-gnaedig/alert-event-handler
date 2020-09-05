@@ -1,19 +1,16 @@
-# Default values for alert-event-handler.
-# This is a YAML-formatted file.
-
-# Configure ConfigMap content
+# Configure ConfigMap Content
+# hooks.json Values
 id: "commands"
 executecommand: "/var/scripts/hook1.sh"
 commandworkingdirectory: "/var/scripts/"
 
 # Executed Shell Commands
-command1: oc
-command2: oc version
-command3: Hello World
-command4:
-command5:
-command6:
-command7:
-command8:
-command9:
-command10:
+commands: |-
+  #!/bin/sh
+  echo ""
+  echo "--- EVENT START ---"
+  echo "`date`"
+  echo "Your first command"
+  oc version
+  echo "`date`"
+  echo "--- EVENT ENDE ---"

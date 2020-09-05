@@ -1,0 +1,23 @@
+kind: ConfigMap
+apiVersion: "v1"
+metadata:
+  name: "alert-event-handler"
+data: 
+  hooks.json: |-
+    [
+      {                                                                                                                                                                                           │
+        "id": "commands",
+        "execute-command": "/var/scripts/hook1.sh",
+        "command-working-directory": "/var/scripts/"
+      }
+    ]
+
+  hook1.sh: |-
+    #!/bin/sh
+    echo ""
+    echo "--- EVENT START ---"
+    echo "`date`"
+    echo "Your first command"
+    oc version
+    echo "`date`"
+    echo "--- EVENT ENDE ---"
