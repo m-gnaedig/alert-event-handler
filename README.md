@@ -13,12 +13,8 @@ This Event-Handler shall execute individual commands like oc commands or kubectl
 * Deploy via [Kubectl](./yaml)  
 * Deploy via [Helm](./hrel)
 
-### Configuration
-The commands which shall be executed by an alert can be listed in the file "hook1.sh".
-
-After Create and Deploy the Pod to your Kubernetes Cluster you need also an Kubernetes Service to the Alert-Event-Handler Pod. 
-
-Than you can setup your Event-Handler as a WebHook Alert Receiver in your Prometheus Alertmannager or Grafana Notification Channel.  
+### Grafana or Prometheus Alertmanager Configuration
+You can setup your Event-Handler as a WebHook Alert Receiver in your Prometheus Alertmannager or Grafana Notification Channel.  
 http://\<Service-To-Your-Alert-Event-Handler>:9000/hooks/commands 
 
 At the moment there is no Username and Password implemented.
