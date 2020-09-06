@@ -1,7 +1,7 @@
 kind: ConfigMap
 apiVersion: "v1"
 metadata:
-  name: "alert-event-handler"
+  name: "alert-event-handler-json"
 data: 
   hooks.json: |-
     [
@@ -11,7 +11,12 @@ data:
         "command-working-directory": "/var/scripts/"
       }
     ]
-
+---
+kind: ConfigMap
+apiVersion: "v1"
+metadata:
+  name: "alert-event-handler-sh"
+data: 
   hook1.sh: |-
     #!/bin/sh
     echo ""
