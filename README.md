@@ -9,6 +9,10 @@ This Event-Handler shall execute individual commands like oc commands or kubectl
 * [OpenShift Client](https://docs.openshift.com/container-platform/4.5/cli_reference/openshift_cli/getting-started-cli.html)
 * [Kubectl](https://kubernetes.io/de/docs/tasks/tools/install-kubectl/)
 
+### Deploy
+* Deploy via [Kubectl](./yaml)  
+* Deploy via [Helm](./hrel)
+
 ### Configuration
 The commands which shall be executed by an alert can be listed in the file "hook1.sh".
 
