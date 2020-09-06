@@ -1,7 +1,10 @@
 # Alert-Event-Handler Helm Chart
 WebHook Alert-Event-Handler for Prometheus Alertmanager and Grafana Notification Channels.
 
-YAML files to deploy Alert-Event-Handler on Kubernetes
+### Configure Alert-Event-Handler Commands
+Add your necessary commands to configmap.yaml
+
+### Deploy Alert-Event-Handler via YAML files
 
 ```
 kubectl apply -f alert-event-handler.yaml
