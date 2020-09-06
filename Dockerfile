@@ -19,6 +19,7 @@ COPY        hooks.json /etc/webhook/hooks.json
 COPY        hook1.sh /var/scripts/hook1.sh
 RUN         chmod +x /var/scripts/hook1.sh
 RUN         chmod +x /var/scripts/
+RUN         mkdir -p /usr/local/openresty/nginx/client_body_temp
 
 # Install OC OpenShift Client
 ENV         OC_OPENSHIFT_CLIENT_VERSION 3.11.276
