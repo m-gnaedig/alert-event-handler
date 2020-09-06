@@ -5,7 +5,7 @@ metadata:
 data: 
   hooks.json: |-
     [
-      {                                                                                                                                                                                           │
+      {
         "id": "commands",
         "execute-command": "/var/scripts/hook1.sh",
         "command-working-directory": "/var/scripts/"
