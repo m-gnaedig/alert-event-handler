@@ -20,6 +20,7 @@ COPY        hook1.sh /var/scripts/hook1.sh
 RUN         chmod +x /var/scripts/hook1.sh
 RUN         chmod +x /var/scripts/
 RUN         mkdir -p /usr/local/openresty/nginx/client_body_temp
+RUN         mkdir -p /usr/local/openresty/nginx/proxy_temp
 
 # Install OC OpenShift Client
 ENV         OC_OPENSHIFT_CLIENT_VERSION 3.11.276

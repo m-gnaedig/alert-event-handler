@@ -2,7 +2,7 @@
 # Alert-Event-Handler Version
 image:
   repository: 29041966/alert-event-handler
-  tag: 0.1.4
+  tag: 0.1.5
 
 # hooks.json Values
 id: "commands"
